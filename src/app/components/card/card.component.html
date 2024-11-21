@@ -1,0 +1,85 @@
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <img src="{{ catFacts.results[0].picture.thumbnail }}">
+        <span> {{ catFacts.results[0].name.title }} </span>
+        <span>{{ catFacts.results[0].name.first }} </span>
+        <span>{{ catFacts.results[0].name.last }}</span>
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ catFacts.results[0].gender }}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-content>
+      <p>
+        <strong>Street: </strong> 
+        <span>{{ randomUser.results[0].location.street.number }}, </span>
+        <span>{{ randomUser.results[0].location.street.name }}</span>
+      </p>
+      <p>
+        <strong>City: </strong> 
+        <span>{{ randomUser.results[0].location.city }}</span>, 
+        <strong>State: </strong> 
+        <span>{{ randomUser.results[0].location.state }}</span>, 
+        <strong>Country: </strong> 
+        <span>{{ randomUser.results[0].location.country }}</span>, 
+        <strong>Postcode: </strong> 
+        <span>{{ randomUser.results[0].location.postcode }}</span>
+        </p>
+      <p>
+        <strong>Coordinates: </strong> 
+        <span>(x) {{ randomUser.results[0].location.coordinates.latitude }}, </span>
+        <span>(y) {{ randomUser.results[0].location.coordinates.longitude }}</span>
+       </p>
+      <p>
+        <strong>Email: </strong> 
+        <span>{{ randomUser.results[0].email }}</span>
+       </p>
+    </ion-card-content>
+      </ion-card-content>
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <img src="{{ randomUser.results[0].picture.thumbnail }}">
+        <span> {{ randomUser.results[0].name.title }} </span>
+        <span>{{ randomUser.results[0].name.first }} </span>
+        <span>{{ randomUser.results[0].name.last }}</span>
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ randomUser.results[0].gender }}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-content>
+        <p>
+          <strong>Street: </strong> 
+          <span>{{ randomUser.results[0].location.street.number }}, </span>
+          <span>{{ randomUser.results[0].location.street.name }}</span>
+        </p>
+        <p>
+          <strong>City: </strong> 
+          <span>{{ randomUser.results[0].location.city }}</span>, 
+          <strong>State:</strong> 
+          <span>{{ randomUser.results[0].location.state }}</span>, 
+          <strong>Country:</strong> 
+          <span>{{ randomUser.results[0].location.country }}</span>, 
+          <strong>Postcode:</strong> 
+          <span>{{ randomUser.results[0].location.postcode }}</span>
+        </p>
+        <p>
+          <strong>Coordinates: </strong> 
+          <span>(x) {{ randomUser.results[0].location.coordinates.latitude }}, </span>
+          <span>(y) {{ randomUser.results[0].location.coordinates.longitude }}</span>
+        </p>
+        <p>
+          <strong>Email: </strong> 
+          <span>{{ randomUser.results[0].email }}</span>
+        </p>
+      </ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
